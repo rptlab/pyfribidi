@@ -1,4 +1,3 @@
-syntax: glob
 *.o
 *.lo
 *.la
@@ -35,15 +34,14 @@ syntax: glob
 __pycache__
 build
 
-syntax: regexp
-^bin/
-^local/
-^include/
-^lib/
-^fribidi-.*/
-^build.out$
-^dist$
-^pyfribidi.egg-info$
-^src/pyfribidi.egg-info$
-^src/pyfribidi_version.h$
-^tmp$
+bin/
+local/
+include/
+lib/
+fribidi-*/
+build?out
+dist
+pyfribidi?egg-info
+src/pyfribidi?egg-info
+src/pyfribidi_version?h
+tmp
